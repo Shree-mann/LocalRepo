@@ -1,3 +1,24 @@
-p{
-    color: red;
+/* Smooth scrolling for navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+/* A subtle hover effect for your project cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #3b82f6; /* A nice VLSI-blue highlight */
+}
+
+/* Professional font styling */
+h1, h2, h3 {
+    letter-spacing: -0.02em;
 }

@@ -1,2 +1,86 @@
-<p>This is a new paragraph</p>
-<p>This is a new feature (dropdown)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreemann JH | Analog Layout Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-slate-900 text-white py-20 px-6 text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight">Shreemann JH</h1>
+        <p class="text-xl mt-3 text-blue-400 font-medium">M.Tech in Electronics & Communication Engineering</p>
+        <p class="text-slate-400 mt-1">Specializing in Analog & Mixed-Signal VLSI Layout</p>
+        
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="mailto:your-email@example.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-bold transition">Email Me</a>
+            <a href="https://www.linkedin.com/in/shreemann-j-h-6680621a2/" class="border border-slate-500 hover:bg-slate-800 px-6 py-2 rounded font-bold transition">LinkedIn</a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-8">
+        
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Profile Summary</h2>
+            <p class="text-slate-700 leading-relaxed text-lg">
+                Aspiring Analog Layout Engineer with a strong foundation in **Custom IC Design**. Experienced in the complete RTL-to-GDSII flow, with a specialized focus on **Layout Automation** using Cadence SKILL scripting. Currently pursuing M.Tech (Roll No: MT24206), focusing on silicon reliability and in-situ monitoring.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-blue-700 mb-3 underline">Design & Layout Tools</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>Cadence Virtuoso (Layout XL, Schematics)</li>
+                        <li>Spectre Circuit Simulator</li>
+                        <li>Physical Verification: DRC, LVS, PEX (Assura/Calibre)</li>
+                        <li>Static Timing Analysis (STA) & SDF Back-annotation</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-blue-700 mb-3 underline">Automation & Languages</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>**SKILL Scripting**: Complex layout automation</li>
+                        <li>Verilog HDL (RTL Synthesis)</li>
+                        <li>LaTeX (Technical Documentation)</li>
+                        <li>Optimization of layout constants (e.g., edge-width tuning)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Academic & Research Projects</h2>
+            
+            <div class="project-card mb-8 p-8 bg-white rounded-xl shadow-sm border border-slate-200">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-xl text-slate-900">Silicon Lifecycle Management with In Situ Monitor</h3>
+                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase">Current</span>
+                </div>
+                <p class="mt-4 text-slate-700">
+                    Developing on-chip monitoring solutions to track process variations and aging. Focused on the integration of monitors into the standard VLSI design flow from RTL to GDSII.
+                </p>
+            </div>
+
+            <div class="project-card mb-8 p-8 bg-white rounded-xl shadow-sm border border-slate-200">
+                <h3 class="font-bold text-xl text-slate-900">PSBR & PRBS Generator Circuit Design</h3>
+                <p class="mt-4 text-slate-700">
+                    Designed and verified a Pseudo-Random Binary Sequence (PRBS) generator. Implemented verification logic using a <strong>Golden Signature</strong> comparison method and integrated an `error_flag` output for circuit reliability testing.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-center py-12 px-6">
+        <p>Shreemann JH | M.Tech ECE | MT24206</p>
+        <p class="text-sm mt-2">Documented via LaTeX | Layouts via Cadence Virtuoso</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
