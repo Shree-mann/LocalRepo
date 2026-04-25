@@ -3,84 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreemann JH | Analog Layout Engineer</title>
+    <title>Shreemann JH | VLSI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
+        .nav-link:hover { color: #60a5fa; border-bottom: 2px solid #60a5fa; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-50 text-slate-900 scroll-smooth">
 
-    <header class="bg-slate-900 text-white py-20 px-6 text-center">
-        <h1 class="text-4xl font-extrabold tracking-tight">Shreemann JH</h1>
-        <p class="text-xl mt-3 text-blue-400 font-medium">M.Tech in Electronics & Communication Engineering</p>
-        <p class="text-slate-400 mt-1">Specializing in Analog & Mixed-Signal VLSI Layout</p>
+    <header class="hero-gradient text-white pt-24 pb-32 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div class="absolute w-96 h-96 bg-blue-500 rounded-full blur-[100px] -top-20 -left-20"></div>
+        </div>
         
-        <div class="mt-8 flex justify-center gap-4">
-            <a href="mailto:your-email@example.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-bold transition">Email Me</a>
-            <a href="https://www.linkedin.com/in/shreemann-j-h-6680621a2/" class="border border-slate-500 hover:bg-slate-800 px-6 py-2 rounded font-bold transition">LinkedIn</a>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <span class="bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 inline-block">Portfolio 2026</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 text-white">Shreemann JH</h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl mx-auto md:mx-0">M.Tech in ECE (VLSI) at <span class="text-white font-semibold">IIIT Delhi</span>.Specialist in Analog Layout & RTL-to-GDSII flow.</p>
+            
+            <div class="mt-10 flex flex-wrap gap-4">
+                <a href="mailto:shreemann24206@iiitd.ac.in" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-bold transition shadow-lg shadow-blue-900/20">Get in Touch</a>
+                <a href="https://www.linkedin.com/in/shreemann-j-h-6680621a2/" target="_blank" class="bg-slate-800/50 hover:bg-slate-800 border border-slate-700 px-8 py-3 rounded-lg font-bold transition">LinkedIn</a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto p-8">
+    <main class="max-w-5xl mx-auto px-6 -mt-16 relative z-20">
         
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Profile Summary</h2>
-            <p class="text-slate-700 leading-relaxed text-lg">
-                Aspiring Analog Layout Engineer with a strong foundation in **Custom IC Design**. Experienced in the complete RTL-to-GDSII flow, with a specialized focus on **Layout Automation** using Cadence SKILL scripting. Currently pursuing M.Tech (Roll No: MT24206), focusing on silicon reliability and in-situ monitoring.
-            </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="glass p-6 rounded-2xl shadow-xl">
+                <p class="text-slate-500 text-xs font-bold uppercase mb-1">Academic Standing</p>
+                <p class="text-2xl font-extrabold text-blue-600">9.14 CGPA</p>
+                <p class="text-slate-400 text-xs mt-1">Till 2nd Semester</p>
+            </div>
+            <div class="glass p-6 rounded-2xl shadow-xl">
+                <p class="text-slate-500 text-xs font-bold uppercase mb-1">Core Expertise</p>
+                <p class="text-2xl font-extrabold text-slate-800">Digital VLSI</p>
+                <p class="text-slate-400 text-xs mt-1">RTL to GDS Flow</p>
+            </div>
+            <div class="glass p-6 rounded-2xl shadow-xl">
+                <p class="text-slate-500 text-xs font-bold uppercase mb-1">Key Tools</p>
+                <p class="text-2xl font-extrabold text-slate-800">Cadence Tools</p>
+                <p class="text-slate-400 text-xs mt-1">Virtuoso, Innovus, Genus</p>
+            </div>
+        </div>
+
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Work Experience</h2>
+                <div class="h-px bg-slate-200 flex-grow"></div>
+            </div>
+            <div class="grid gap-6">
+                <div class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-blue-400 transition-all duration-300 shadow-sm">
+                    <span class="text-blue-600 font-bold text-sm">Aug 2023 – Dec 2023 [cite: 12]</span>
+                    <h3 class="text-xl font-bold mt-1 group-hover:text-blue-600 transition-colors">Analyst Intern | Deloitte USI h3>
+                </div>
+                <div class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-blue-400 transition-all duration-300 shadow-sm">
+                    <span class="text-blue-600 font-bold text-sm">Jan 2023 – May 2023 [cite: 15]</span>
+                    <h3 class="text-xl font-bold mt-1 group-hover:text-blue-600 transition-colors">Junior Electronics Engineer | Avay BioSciences [cite: 14]</h3>
+                    <p class="text-slate-600 mt-2">Designed electrical circuitry for Bio-3D printers using EAGLE[cite: 16]. Managed firmware assembly with Embedded C and Arduino[cite: 16].</p>
+                </div>
+            </div>
         </section>
 
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Technical Expertise</h2>
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Technical Projects</h2>
+                <div class="h-px bg-slate-200 flex-grow"></div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-blue-700 mb-3 underline">Design & Layout Tools</h3>
-                    <ul class="list-disc list-inside text-slate-600 space-y-1">
-                        <li>Cadence Virtuoso (Layout XL, Schematics)</li>
-                        <li>Spectre Circuit Simulator</li>
-                        <li>Physical Verification: DRC, LVS, PEX (Assura/Calibre)</li>
-                        <li>Static Timing Analysis (STA) & SDF Back-annotation</li>
-                    </ul>
+                <div class="project-card-v2 bg-slate-900 p-8 rounded-3xl text-white hover:scale-[1.02] transition-transform shadow-2xl">
+                    <h3 class="text-xl font-bold mb-3">Insertion Methodology for In-Situ Monitors</h3>
+                    <p class="text-slate-400 text-sm mb-6">Automated scripts for ISM placement in ARM Cortex cores. Slack analysis using 45nm/65nm nodes[cite: 31].</p>
+                    <a href="docs/ISM_Presentation.pdf" target="_blank" class="text-blue-400 text-sm font-bold flex items-center gap-2 hover:underline">
+                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-blue-700 mb-3 underline">Automation & Languages</h3>
-                    <ul class="list-disc list-inside text-slate-600 space-y-1">
-                        <li>**SKILL Scripting**: Complex layout automation</li>
-                        <li>Verilog HDL (RTL Synthesis)</li>
-                        <li>LaTeX (Technical Documentation)</li>
-                        <li>Optimization of layout constants (e.g., edge-width tuning)</li>
-                    </ul>
+                <div class="project-card-v2 bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">8T SRAM Cell (1R/1W) Array</h3>
+                    <p class="text-slate-600 text-sm mb-6">Designed a 32x32 array using flipping and sharing techniques[cite: 35]. Verified parameters via ELDO and DRC/LVS[cite: 36].</p>
+                    <a href="docs/SRAM_Presentation.pdf" target="_blank" class="text-blue-600 text-sm font-bold flex items-center gap-2 hover:underline">
+                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="mb-16">
-            <h2 class="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4 mb-6">Academic & Research Projects</h2>
-            
-            <div class="project-card mb-8 p-8 bg-white rounded-xl shadow-sm border border-slate-200">
-                <div class="flex justify-between items-start">
-                    <h3 class="font-bold text-xl text-slate-900">Silicon Lifecycle Management with In Situ Monitor</h3>
-                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase">Current</span>
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
+            <div class="lg:col-span-2">
+                <h3 class="text-2xl font-bold mb-6">Leadership Roles</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
+                        <p class="text-slate-700">Placement Coordinator — MTech, IIIT Delhi</p>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-2 h-2 rounded-full bg-blue-600 mt-2"></div>
+                        <p class="text-slate-700">Technical Events Head — BTech</p>
+                    </div>
                 </div>
-                <p class="mt-4 text-slate-700">
-                    Developing on-chip monitoring solutions to track process variations and aging. Focused on the integration of monitors into the standard VLSI design flow from RTL to GDSII.
-                </p>
             </div>
-
-            <div class="project-card mb-8 p-8 bg-white rounded-xl shadow-sm border border-slate-200">
-                <h3 class="font-bold text-xl text-slate-900">PSBR & PRBS Generator Circuit Design</h3>
-                <p class="mt-4 text-slate-700">
-                    Designed and verified a Pseudo-Random Binary Sequence (PRBS) generator. Implemented verification logic using a <strong>Golden Signature</strong> comparison method and integrated an `error_flag` output for circuit reliability testing.
-                </p>
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Honors</h3>
+                <div class="bg-blue-600 p-6 rounded-2xl text-white">
+                    <p class="text-xs uppercase font-bold tracking-widest opacity-70 mb-2">Awards</p>
+                    <p class="font-bold mb-4 italic">"Gold Medal in Speed Skating Championship"</p>
+                    <p class="text-xs uppercase font-bold tracking-widest opacity-70 mb-2">Certification</p>
+                    <p class="font-bold">Salesforce Platform Dev I</p>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 text-center py-12 px-6">
-        <p>Shreemann JH | M.Tech ECE | MT24206</p>
-        <p class="text-sm mt-2">Documented via LaTeX | Layouts via Cadence Virtuoso</p>
+    <footer class="bg-slate-900 text-slate-500 py-16 px-6 text-center border-t border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <p class="mb-2">Developed by Shreemann JH | Roll No: MT24206 p>
+            <p class="text-xs">Built with Tailwind CSS & Glassmorphism UI</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
