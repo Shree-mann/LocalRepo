@@ -3,171 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreemann JH | Hardware Engineer Intern @ IBM</title>
+    <title>Shreemann JH | Hardware Engineer Intern</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-gradient { background: linear-gradient(135deg, #1a1a1a, #2d2d2d); }
-        .nav-link:hover { color: #d4a574; border-bottom: 2px solid #d4a574; }
+        .tech-card { transition: all 0.2s ease-in-out; }
+        .tech-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 scroll-smooth">
+<body class="bg-slate-50 text-slate-800 antialiased scroll-smooth">
 
-<header class="hero-gradient text-white pt-24 pb-32 px-6 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            <div class="absolute w-96 h-96 bg-amber-700 rounded-full blur-[100px] -top-20 -left-20"></div>
-        </div>
-        
-        <div class="max-w-5xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-8 md:text-left text-center">
+    <!-- Header / Hero Section -->
+    <header class="bg-white border-b border-slate-200 py-16 px-6 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
             
             <div class="relative shrink-0">
-                <div class="absolute inset-0 bg-amber-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
                 <img src="assets/final-image.jpg" alt="Shreemann JH" 
-                     class="relative w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-amber-700 object-cover shadow-2xl">
+                     class="w-36 h-36 md:w-44 md:h-44 rounded-xl border border-slate-200 object-cover shadow-sm">
             </div>
 
-            <div class="flex-grow">
-                <span class="bg-amber-900/30 text-amber-400 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 inline-block">Portfolio 2026</span>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 text-white">Shreemann JH</h1>
-                <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl">M.Tech in ECE (VLSI) at <span class="text-white font-semibold">IIIT Delhi</span>.</p>
+            <div class="flex-grow text-center md:text-left">
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-3">
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-xs font-semibold tracking-wider uppercase">Hardware Engineer Intern</span>
+                    <span class="bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-md text-xs font-semibold uppercase">M.Tech VLSI</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-3">Shreemann JH</h1>
+                <p class="text-lg text-slate-600 font-light max-w-2xl leading-relaxed">
+                    M.Tech in ECE (VLSI) at <span class="text-slate-900 font-medium">IIIT Delhi</span>. Specialize in Digital VLSI Design, RTL to GDS flows, Layout Automation, and custom circuit synthesis.
+                </p>
                 
-                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="mailto:shreemann24206@iiitd.ac.in" class="bg-amber-700 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-bold transition shadow-lg shadow-amber-900/20">Get in Touch</a>
-                    <a href="https://www.linkedin.com/in/shreemann-j-h-6680621a2/" target="_blank" class="bg-slate-800/50 hover:bg-slate-800 border border-amber-700/50 px-8 py-3 rounded-lg font-bold transition">LinkedIn</a>
+                <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-3 text-sm">
+                    <a href="mailto:shreemann24206@iiitd.ac.in" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg font-medium transition">Contact Email</a>
+                    <a href="https://www.linkedin.com/in/shreemann-j-h-6680621a2/" target="_blank" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 px-5 py-2.5 rounded-lg font-medium transition">LinkedIn</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 -mt-16 relative z-20">
+    <main class="max-w-5xl mx-auto px-6 py-12">
         
+        <!-- Metrics Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <div class="glass p-6 rounded-2xl shadow-xl border-t-4 border-amber-700">
-                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Current Status</p>
-                <p class="text-xl font-extrabold text-amber-400">Hardware Intern @ IBM</p>
-                <p class="text-slate-500 text-xs mt-1 italic">Analog IO Layout Team</p>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Current Role</p>
+                <p class="text-lg font-bold text-slate-900">Hardware Intern @ IBM</p>
+                <p class="text-slate-500 text-xs mt-0.5">Analog IO Layout Team</p>
             </div>
-            <div class="glass p-6 rounded-2xl shadow-xl">
-                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Academic Standing</p>
-                <p class="text-2xl font-extrabold text-amber-300">9.46 CGPA</p>
-                <p class="text-slate-500 text-xs mt-1">IIIT Delhi | M.Tech, VLSI</p>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Postgraduate Standing</p>
+                <p class="text-xl font-bold text-slate-900">9.14 CGPA</p>
+                <p class="text-slate-500 text-xs mt-0.5">IIIT Delhi — M.Tech ECE (VLSI)</p>
             </div>
-            <div class="glass p-6 rounded-2xl shadow-xl">
-                <p class="text-slate-400 text-xs font-bold uppercase mb-1">Academic Standing</p>
-                <p class="text-2xl font-extrabold text-amber-300">8.604 CGPA</p>
-                <p class="text-slate-500 text-xs mt-1">SASTRA University, Thanjavur | B.Tech, ECE</p>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Undergraduate Standing</p>
+                <p class="text-xl font-bold text-slate-900">8.6034 CGPA</p>
+                <p class="text-slate-500 text-xs mt-0.5">SASTRA University — B.Tech Honors</p>
             </div>
         </div>
 
-        <section class="mb-20">
-            <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-extrabold text-slate-50 tracking-tight">Work Experience</h2>
-                <div class="h-px bg-slate-700 flex-grow"></div>
+        <!-- Technical Skills Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Technical Toolset</h2>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4 text-sm">
+                <div>
+                    <span class="font-semibold text-slate-700 inline-block w-36">Expertise Areas:</span>
+                    <span class="text-slate-600">Digital VLSI Design, RTL to GDS Flow, Physical Design, Layout Automation</span>
+                </div>
+                <hr class="border-slate-150">
+                <div>
+                    <span class="font-semibold text-slate-700 inline-block w-36">EDA Tools & Software:</span>
+                    <span class="text-slate-600">Cadence Virtuoso, Genus, Innovus, Tempus, Conformal, Xilinx Vivado, ModelSim, ELDO, Yosys, OpenSTA, KeilµVision</span>
+                </div>
+                <hr class="border-slate-150">
+                <div>
+                    <span class="font-semibold text-slate-700 inline-block w-36">Programming:</span>
+                    <span class="text-slate-600">Verilog HDL, Python, C, C++, SKILL Scripting, LaTeX</span>
+                </div>
             </div>
-            <div class="grid gap-6">
-                <div class="group bg-slate-800 p-8 rounded-2xl border border-amber-700 shadow-2xl transition-all duration-300">
+        </section>
+
+        <!-- Work Experience -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Professional History</h2>
+            <div class="space-y-6">
+                
+                <div class="bg-white p-6 rounded-xl border-l-4 border-slate-900 border-t border-r border-b border-slate-200 shadow-sm">
                     <div class="flex justify-between items-start mb-2">
-                        <span class="text-amber-400 font-bold text-sm uppercase tracking-wider">Current</span>
-                        <span class="text-slate-400 text-xs font-medium">Apr 2026 – Present</span>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Hardware Engineer Intern</h3>
+                            <p class="text-sm font-medium text-slate-600">IBM — Analog IO Layout Team</p>
+                        </div>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Apr 2026 – Present</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white group-hover:text-amber-300 transition-colors">Hardware Engineer Intern | IBM</h3>
-                    <p class="text-amber-300 text-sm font-semibold mb-4 underline decoration-amber-700/50 underline-offset-4">Analog IO Layout Team</p>
-                    <ul class="text-slate-300 text-sm space-y-2 list-disc list-inside">
-                        <li>Focusing on Layout Automation and complex SKILL PCELL development.</li>
-                        <li>Gaining deep expertise in IBM's internal layout methodologies and IO circuit automation.</li>
-                        <li>Leveraging SKILL scripting to optimize layout generation for high-speed IO blocks.</li>
+                    <ul class="text-sm text-slate-600 space-y-1.5 list-disc list-inside mt-3">
+                        <li>Developing complex SKILL PCell scripts to achieve high-performance design layout automation.</li>
+                        <li>Deploying automated layout engineering techniques across custom high-speed IO circuit building blocks.</li>
+                        <li>Gaining continuous foundational exposure to IBM's proprietary advanced layout methodologies.</li>
                     </ul>
                 </div>
 
-                <div class="group bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-700 transition-all duration-300 shadow-sm opacity-80 hover:opacity-100">
-                    <span class="text-amber-400 font-bold text-sm">Aug 2023 – Dec 2023</span>
-                    <h3 class="text-xl font-bold mt-1 group-hover:text-amber-400 transition-colors text-slate-100">Analyst Intern | Deloitte USI</h3>
-                    <p class="text-slate-400 text-sm mt-1">Salesforce Training, Apex programming, and LWC development for internal projects.</p>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-base font-bold text-slate-900">Analyst Intern</h3>
+                            <p class="text-sm text-slate-600">Deloitte USI</p>
+                        </div>
+                        <span class="text-xs text-slate-500 font-medium">Aug 2023 – Dec 2023</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Engineered custom components using Salesforce infrastructure, Apex programming, and Lightning Web Components (LWC) for enterprise-tier internal project frameworks.</p>
                 </div>
                 
-                <div class="group bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-700 transition-all duration-300 shadow-sm opacity-80 hover:opacity-100">
-                    <span class="text-amber-400 font-bold text-sm">Jan 2023 – May 2023</span>
-                    <h3 class="text-xl font-bold mt-1 group-hover:text-amber-400 transition-colors text-slate-100">Junior Electronics Engineer | Avay BioSciences</h3>
-                    <p class="text-slate-400 text-sm mt-1">Bio-3D printer electrical circuitry design and assembly using EAGLE and Embedded C.</p>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-base font-bold text-slate-900">Junior Electronics Engineer</h3>
+                            <p class="text-sm text-slate-600">Avay BioSciences Private Limited</p>
+                        </div>
+                        <span class="text-xs text-slate-500 font-medium">Jan 2023 – May 2023</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Architected and verified system-level electrical PCB hardware structures for automated Bio-3D printing systems using EAGLE and low-level firmware architecture configuration in Embedded C.</p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-20">
-            <div class="flex items-center gap-4 mb-10">
-                <h2 class="text-3xl font-extrabold text-slate-50 tracking-tight">Technical Projects</h2>
-                <div class="h-px bg-slate-700 flex-grow"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="project-card-v2 bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:shadow-xl hover:shadow-amber-900/20 transition-all">
-                    <h3 class="text-xl font-bold mb-3 text-slate-100"> SRAM NAND 9:512 Decoder </h3>
-                    <p class="text-slate-400 text-sm mb-6">Designed an efficient row decoder using optimization techniques, calculated timing and power. Designed Layout of Pre-Decoder stage.</p>
-                    <a href="docs/ISM_Presentation.pdf" target="_blank" class="text-amber-400 text-sm font-bold flex items-center gap-2 hover:text-amber-300 transition">
-                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+        <!-- Technical Projects -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Engineering Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="tech-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-amber-600 tracking-wider">Aug – Dec 2024 | Team Size: 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5 mb-2">SRAM NAND 9:512 Row Decoder</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Calculated critical circuit limits via Logical Effort optimizations. Modeled full pre/post-decode block parameters and mapped out layout arrays for the primary pre-decoder stage.</p>
+                    </div>
+                    <a href="docs/SRAM_Decoder_Report.pdf" target="_blank" class="text-xs font-bold text-slate-900 hover:text-amber-700 tracking-wider uppercase inline-flex items-center gap-1">Review Documentation &rarr;</a>
                 </div>
-                <div class="project-card-v2 bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:shadow-xl hover:shadow-amber-900/20 transition-all">
-                    <h3 class="text-xl font-bold mb-3 text-slate-100">Implementation of Elevator Logic - RTL to GDS Flow</h3>
-                    <p class="text-slate-400 text-sm mb-6">Complete RTL to GDS flow model for Elevator Logic with various timing constraints, CTS
-and Physical Design
-                    <a href="docs/SRAM_Presentation.pdf" target="_blank" class="text-amber-400 text-sm font-bold flex items-center gap-2 hover:text-amber-300 transition">
-                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+
+                <div class="tech-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-amber-600 tracking-wider">Aug – Dec 2024 | Team Size: 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5 mb-2">Implementation of Elevator Logic (RTL to GDS)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Executed comprehensive implementation runs across full synthesis, physical cell placements, design rule validations, and detailed Clock Tree Synthesis (CTS) balancing structures.</p>
+                    </div>
+                    <a href="docs/Elevator_RTL_GDS_Report.pdf" target="_blank" class="text-xs font-bold text-slate-900 hover:text-amber-700 tracking-wider uppercase inline-flex items-center gap-1">Review Documentation &rarr;</a>
                 </div>
-                <div class="project-card-v2 bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:shadow-xl hover:shadow-amber-900/20 transition-all">
-                    <h3 class="text-xl font-bold mb-3 text-slate-100">Insertion Methodology for In-Situ Monitors</h3>
-                    <p class="text-slate-400 text-sm mb-6">Automated scripts for ISM placement in ARM Cortex cores. Slack analysis using 45nm/65nm nodes.</p>
-                    <a href="docs/ISM_Presentation.pdf" target="_blank" class="text-amber-400 text-sm font-bold flex items-center gap-2 hover:text-amber-300 transition">
-                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+
+                <div class="tech-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-amber-600 tracking-wider">Aug – Dec 2024 | Team Size: 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5 mb-2">Telescopic Operational Transconductance Amplifier</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Developed structural schematics and swept frequency response curves for Cascoded OTA models against benchmark standard 5-Transistor topologies to gauge gain changes.</p>
+                    </div>
+                    <a href="docs/OTA_Design_Report.pdf" target="_blank" class="text-xs font-bold text-slate-900 hover:text-amber-700 tracking-wider uppercase inline-flex items-center gap-1">Review Documentation &rarr;</a>
                 </div>
-                <div class="project-card-v2 bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:shadow-xl hover:shadow-amber-900/20 transition-all">
-                    <h3 class="text-xl font-bold mb-3 text-slate-100">8T SRAM Cell (1R/1W) Array</h3>
-                    <p class="text-slate-400 text-sm mb-6">Designed a 32x32 array using flipping and sharing techniques. Verified parameters via ELDO and DRC/LVS.</p>
-                    <a href="docs/SRAM_Presentation.pdf" target="_blank" class="text-amber-400 text-sm font-bold flex items-center gap-2 hover:text-amber-300 transition">
-                        EXPLORE PROJECT <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+
+                <div class="tech-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-amber-600 tracking-wider">Jan – May 2025 | Team Size: 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5 mb-2">Design of 8T SRAM Cell Array (1R/1W)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Delivered a 32x32 custom cell array block utilizing advanced mirroring, guard ring distribution, and cell-sharing arrangements. Ran parametric DRC/LVS clean-ups using ELDO engines.</p>
+                    </div>
+                    <a href="docs/8T_SRAM_Layout_Report.pdf" target="_blank" class="text-xs font-bold text-slate-900 hover:text-amber-700 tracking-wider uppercase inline-flex items-center gap-1">Review Documentation &rarr;</a>
                 </div>
+
+                <div class="tech-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between md:col-span-2">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-amber-600 tracking-wider">Jan – May 2025 | Team Size: 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-0.5 mb-2">Design & Development of IEEE 802.11a Architecture on ZC706</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Engineered and verified a fully operational IEEE 802.11a baseband transceiver on a ZedBoard/ZC706 SoC hardware target. Integrated orthogonal frequency division multiplexing (OFDM) logic to verify communication links.</p>
+                    </div>
+                    <a href="docs/IEEE_802_11a_Transceiver.pdf" target="_blank" class="text-xs font-bold text-slate-900 hover:text-amber-700 tracking-wider uppercase inline-flex items-center gap-1">Review Documentation &rarr;</a>
+                </div>
+
             </div>
         </section>
 
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
-            <div class="lg:col-span-2">
-                <h3 class="text-2xl font-bold mb-6 text-slate-50">Leadership Roles</h3>
-                <div class="space-y-4">
-                    <div class="flex gap-4 items-start">
-                        <div class="w-2 h-2 rounded-full bg-amber-600 mt-2"></div>
-                        <p class="text-slate-300 font-medium">Placement Coordinator — MTech, IIIT Delhi</p>
+        <!-- Education & Achievements Split Block -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            
+            <div class="md:col-span-2 space-y-6">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Education Background</h2>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">New Prince Matriculation Higher Secondary School</h4>
+                            <p class="text-xs text-slate-500">HSC (PCMB) — State Board</p>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-700">92.8% | 2019</span>
                     </div>
-                    <div class="flex gap-4 items-start">
-                        <div class="w-2 h-2 rounded-full bg-amber-600 mt-2"></div>
-                        <p class="text-slate-300">Technical Events Head — BTech, SASTRA University</p>
+                    <hr class="border-slate-100">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">New Prince Matriculation Higher Secondary School</h4>
+                            <p class="text-xs text-slate-500">SSLC — State Board</p>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-700">98.0% | 2017</span>
+                    </div>
+                </div>
+
+                <h2 class="text-xl font-bold text-slate-900 tracking-tight pt-2">Leadership Roles</h2>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm space-y-2 text-slate-600">
+                    <p>&bull; <span class="font-semibold text-slate-900">Placement Coordinator</span> — M.Tech, IIIT Delhi (2025 – Present)</p>
+                    <p>&bull; <span class="font-semibold text-slate-900">Placement Coordinator</span> — B.Tech, SASTRA University (2022)</p>
+                    <p>&bull; <span class="font-semibold text-slate-900">Technical Events Head & Coordinator</span> — SASTRA University</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Honors</h2>
+                <div class="bg-slate-900 p-6 rounded-xl text-slate-100 shadow-sm space-y-4 text-sm">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-0.5">Professional Certification</p>
+                        <p class="font-semibold text-white">Salesforce Platform Developer I</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-0.5">Industry Award</p>
+                        <p class="font-semibold text-white">Employee of the Month Award</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-0.5">Athletic Honor</p>
+                        <p class="font-semibold text-white">Gold Medal — Speed Skating Championship (District Level)</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <h3 class="text-2xl font-bold mb-6 text-slate-50">Honors</h3>
-                <div class="bg-gradient-to-br from-amber-900 to-amber-800 p-6 rounded-2xl text-white shadow-lg">
-                    <p class="text-xs uppercase font-bold tracking-widest opacity-80 mb-1">Awards</p>
-                    <p class="font-bold mb-4 italic">"Gold Medal in  Speed Skating Championship"</p>
-                    <p class="text-xs uppercase font-bold tracking-widest opacity-80 mb-1">Certification</p>
-                    <p class="font-bold">Salesforce Platform Dev I</p>
-                </div>
-            </div>
-        </section>
+
+        </div>
 
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-16 px-6 text-center border-t border-slate-800">
-        <div class="max-w-5xl mx-auto">
-            <p class="mb-2">Shreemann JH | IBM Hardware Engineer Intern</p>
-            <p class="text-xs opacity-50">Last Updated: April 2026</p>
+    <footer class="bg-white text-slate-500 py-12 px-6 text-center border-t border-slate-200 text-xs">
+        <div class="max-w-5xl mx-auto space-y-1">
+            <p class="font-medium text-slate-700">Shreemann JH | IBM Hardware Engineer Intern</p>
+            <p>103, 7A/1, Mangala Flats, Mahalakshmi Nagar, Adambakkam, Chennai - 600088</p>
+            <p class="opacity-60 pt-4">Data Source: Validated Academic Document June 2025. Compiled 2026.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
