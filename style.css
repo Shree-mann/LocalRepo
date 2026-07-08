@@ -7,18 +7,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* A subtle hover effect for your project cards */
+/* Custom layout hover effects for your project cards */
 .project-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: #3b82f6; /* A nice VLSI-blue highlight */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #3b82f6; /* VLSI-blue highlight */
+    background-color: #1e293b;
 }
 
-/* Professional font styling */
+/* Professional font styling spacing alignment */
 h1, h2, h3 {
     letter-spacing: -0.02em;
 }
